@@ -2,21 +2,26 @@
     "events": [
       {
         "id": 1,
-        "name": "Lunch and Learn",
-        "description": "South by Southwest Quinoa Bowl at Fresh & Co",
-        "category": "Food",
-        "date": -10.55,
-        "time": "3:50PM PST",
-        "location":"Seattle",
-        "zoom": "some url",
-        "image": "some url",
+        "name": "Career Coach AMA",
+        "description": "Ask a Career Coach anything about the job search process!",
+        "category": "career",
+        "date": "Thursday, September 16th" ,
+        "time": "11:30am ET/8:30am PT",
+        "location": "online",
+        "zoom": "https://flatironschool.zoom.us/j/98316664785?pwd=WDMxS3psMnpzVVhFMy9sVEFsRDZJQT09" ,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Careers_blackboard.jpg",
         "attending": ["Melissa", "Gabriel", "Jae"]
       },
       {
-        "id": 2,
-        "date": "2019-12-01",
-        "description": "South by Southwest Quinoa Bowl at Fresh & Co",
-        "category": "Food",
-        "amount": -10.55
+      "id": 1,
+      "name": "Career Coach AMA",
+      "description": "Ask a Career Coach anything about the job search process!",
+      "category": "career",
+      "date": "Thursday, September 16th" ,
+      "time": "11:30am ET/8:30am PT",
+      "location": "online",
+      "zoom": "https://flatironschool.zoom.us/j/98316664785?pwd=WDMxS3psMnpzVVhFMy9sVEFsRDZJQT09" ,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Careers_blackboard.jpg",
+      "attending": ["Melissa", "Gabriel", "Jae"]
       }
     ]}
