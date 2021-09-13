@@ -37,6 +37,9 @@
         "attending": ["Melissa", "Gabriel", "Jae"]
       },
       {
+        "something": "else"
+      },
+      {
         "filler": "stuff"
       }
     ]}
