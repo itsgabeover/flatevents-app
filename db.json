@@ -36,5 +36,8 @@
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh1WCL-AFI-Q3hsKeqMGqZpFDsaqiUz3kMmA&usqp=CAU" ,
         "attending": ["Melissa", "Gabriel", "Jae"]
       },
+      {
+        "something": "else"
+      }
      
     ]}
