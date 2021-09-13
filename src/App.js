@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react"
+import NavBar from './NavBar'
+import EventContainer from './Home'
+import EventDetails from './EventDetails'
 
 function App() {
+  const [events, setEvents] = useState([])
+
+  useEffect(() => {
+    fetch("http://localhost:3000/events")
+    .then(res => res.json())
+    .then(eventData => console.log(eventData))
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <NavBar />
+    <EventContainer />
+    {/* <EventDetails /> */}
+    </>
+  )
 }
 
 export default App;
