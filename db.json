@@ -13,15 +13,15 @@
         "attending": ["Melissa", "Gabriel", "Jae"]
       },
       {
-      "id": 1,
-      "name": "Career Coach AMA",
-      "description": "Ask a Career Coach anything about the job search process!",
-      "category": "career",
-      "date": "Thursday, September 16th" ,
-      "time": "11:30am ET/8:30am PT",
-      "location": "online",
-      "zoom": "https://flatironschool.zoom.us/j/98316664785?pwd=WDMxS3psMnpzVVhFMy9sVEFsRDZJQT09" ,
-      "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Careers_blackboard.jpg",
-      "attending": ["Melissa", "Gabriel", "Jae"]
+        "id": 2,
+        "name": "Stack and Snack",
+        "description": "Did you try to learn something new this weekend and it's not quite making sense? Are you retaking your code challenge this week and you are still stuck on something? Let's all take some time to study some of these concepts together and eat some snacks and other goodies that I will provide.",
+        "category": "study groups",
+        "date": "Monday, September 13th" ,
+        "time": "4-6pm CST",
+        "location": "Chicago Campus",
+        "zoom": "In-Person" ,
+        "image": "https://abaforlawstudents.com/wp-content/uploads/2019/11/study-group.jpg" ,
+        "attending": ["Melissa", "Gabriel", "Jae"]
       }
     ]}
