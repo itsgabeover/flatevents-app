@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react'
 import NavBar from './NavBar'
 import EventContainer from './EventContainer'
 import EventDetails from './EventDetails'
+import { BrowserRouter, Route} from "react-router-dom";
+import CalendarView from './CalendarView';
+import AddEvent from './AddEvent';
 
 function App() {
   const [events, setEvents] = useState([])
@@ -18,9 +21,13 @@ function App() {
 
   return (
     <div>
-    <NavBar onAddEvent={handleAddEvent}/>
-    <EventContainer events={events}/>
-    <EventDetails />
+      <BrowserRouter>
+        <NavBar onAddEvent={handleAddEvent}/>
+        <Route exact path="/"><EventContainer events={events}/></Route>
+        <Route exact path="/details" component={EventDetails}/>
+        <Route exact path="/addevent" component={AddEvent}/>
+        <Route exact path="/calendar" component={CalendarView}/>
+      </BrowserRouter>
     </div>
   )
 }
