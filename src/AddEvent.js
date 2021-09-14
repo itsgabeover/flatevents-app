@@ -44,8 +44,9 @@ function AddEvent({ onAddEvent }) {
           <option value="newyork">New York Campus</option>
           <option value="chicago">Chicago Campus</option>
           <option value="denver">Denver Campus</option>
-          <option value="sanfrancisco">San Francisco</option>
-          <option value="seattle">Seattle</option>
+          <option value="sanfrancisco">San Francisco Campus</option>
+          <option value="seattle">Seattle Campus</option>
+          <option value="online">Online</option>
         </select>
         <label>Date: </label>
         <input type="text" name="date" placeholder="Date..." />
