@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect } from 'react'
 import NavBar from './NavBar'
-import EventContainer from './Home'
+import EventContainer from './EventContainer'
 import EventDetails from './EventDetails'
 
 function App() {
@@ -8,16 +8,20 @@ function App() {
 
   useEffect(() => {
     fetch("http://localhost:3000/events")
-    .then(res => res.json())
-    .then(eventData => console.log(eventData))
+      .then((res) => res.json())
+      .then(setEvents)  
   }, [])
 
+  function handleAddEvent(newEvent) {
+    setEvents([...events, newEvent])
+  }
+
   return (
-    <>
-    <NavBar />
-    <EventContainer />
-    {/* <EventDetails /> */}
-    </>
+    <div>
+    <NavBar onAddEvent={handleAddEvent}/>
+    <EventContainer events={events}/>
+    <EventDetails />
+    </div>
   )
 }
 

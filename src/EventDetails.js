@@ -2,7 +2,6 @@
 function EventDetails() {
   return(
     <div>
-    {console.log("EventDetails!")}
     </div>
   )
 }
