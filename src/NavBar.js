@@ -1,13 +1,15 @@
 import Home from "./Home"
 import AddEvent from "./AddEvent"
-// import CalendarView from "./CalendarView"
+import CalendarView from "./CalendarView"
 
-function NavBar() {
+function NavBar({ onAddEvent }) {
   return (
     <div>
+      <h1>Flatevents</h1>
+      <h2>Home | Add Event | Calendar View</h2>
       <Home />
-      <AddEvent />
-      {/* <CalendarView /> */}
+      <AddEvent onAddEvent={onAddEvent}/>
+      <CalendarView />
     </div>
   )
 }
