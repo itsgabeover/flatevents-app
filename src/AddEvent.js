@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react'
 
 function AddEvent({ onAddEvent }) {
 
@@ -16,7 +17,9 @@ function AddEvent({ onAddEvent }) {
         location:e.target.location.value,
         date: e.target.date.value,
         time: e.target.time.value,
-        zoom: e.target.zoom.value
+        zoom: e.target.zoom.value,
+        attending: [],
+        image: ""
       })
     })
     .then(res => res.json())
