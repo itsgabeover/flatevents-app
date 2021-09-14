@@ -2,7 +2,6 @@
 function Home() {
   return (
     <div>
-      {console.log("Home!")}
     </div>
   )
 }
