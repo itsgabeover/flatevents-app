@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 
 function AddEvent({ onAddEvent }) {
 
@@ -14,7 +14,7 @@ function AddEvent({ onAddEvent }) {
         name: e.target.name.value,
         description: e.target.description.value,
         category: e.target.category.value,
-        location:e.target.location.value,
+        location: e.target.location.value,
         date: e.target.date.value,
         time: e.target.time.value,
         zoom: e.target.zoom.value,
@@ -43,7 +43,7 @@ function AddEvent({ onAddEvent }) {
           <option value="networking">Networking</option>
         </select>
         <label>Location: </label>
-        <select name="label">
+        <select name="location">
           <option value="newyork">New York Campus</option>
           <option value="chicago">Chicago Campus</option>
           <option value="denver">Denver Campus</option>
