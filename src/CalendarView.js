@@ -5,14 +5,13 @@ import dayGridPlugin from '@fullcalendar/daygrid' // a plugin!
 function CalendarView({events}) {
 
   console.log(events)
+  const newArray = events.map(event => ({ title: event.name, date:event.date}));
+  console.log(newArray)
   return (
     <FullCalendar
         plugins={[ dayGridPlugin ]}
         initialView="dayGridMonth"
-        events={[
-          { title: 'event 1', date: '2021-09-18' },
-          { title: 'event 2', date: '2021-09-02' }
-        ]}
+        events={newArray}
       />
   )
 }
