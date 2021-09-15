@@ -52,7 +52,7 @@
       "date": "2021-09-13",
       "time": "4:00-6:00pm CST",
       "location": "Chicago Campus",
-      "zoom": "In-Person",
+      "zoom": null,
       "image": "https://abaforlawstudents.com/wp-content/uploads/2019/11/study-group.jpg",
       "attending": [
         "Melissa",
@@ -68,7 +68,7 @@
       "date": "2021-09-17",
       "time": "4:30-5:30pm CST",
       "location": "Chicago Campus",
-      "zoom": "In-Person",
+      "zoom": null,
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh1WCL-AFI-Q3hsKeqMGqZpFDsaqiUz3kMmA&usqp=CAU",
       "attending": [
         "Melissa",
@@ -121,7 +121,7 @@
       "date": "2021-09-15",
       "time": "1:00-2:00pm EST",
       "location": "New York Campus",
-      "zoom": "In-Person",
+      "zoom": null,
       "image": "https://m.media-amazon.com/images/M/MV5BZWFlNzRmOTItZjY1Ni00ZjZkLTk5MDgtOGFhOTYzNWFhYzhmXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg",
       "attending": [
         "Gabriel"
@@ -135,7 +135,7 @@
       "date": "2021-09-15",
       "time": "12:30-2:00pm EST",
       "location": "New York Campus",
-      "zoom": "In-Person",
+      "zoom": null,
       "image": "https://play-lh.googleusercontent.com/Q8RMXj6aSFQolfCuivGnXqF1ELD31HIuEFifG8MiDeHPjpFh9umrIkKL1VEvHnT_Ww",
       "attending": [
         "Gabriel",
@@ -150,7 +150,7 @@
       "date": "2021-09-15",
       "time": "5:00-6:30pm EST",
       "location": "New York Campus",
-      "zoom": "In-Person",
+      "zoom": null,
       "image": "https://i.ytimg.com/vi/kM9ASKAni_s/maxresdefault.jpg",
       "attending": [
         "Gabriel",
@@ -165,7 +165,7 @@
       "date": "2021-09-24",
       "time": "4:00-6:00pm MTN",
       "location": "Denver Campus",
-      "zoom": "In-Person",
+      "zoom": null,
       "image": "https://about.fb.com/wp-content/uploads/2020/04/Grad_edit3.jpg?fit=1920%2C1080",
       "attending": [
         "Gabriel",
@@ -181,7 +181,7 @@
       "date": "2021-09-20",
       "time": "12:00-2:00pm MTN",
       "location": "Denver Campus",
-      "zoom": "In-Person",
+      "zoom": null,
       "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-keto-pizza-073-1544039876.jpg?crop=0.668xw:1.00xh;0.233xw,0.00255xh&resize=980:*",
       "attending": [
         "Gabriel",
