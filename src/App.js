@@ -8,7 +8,8 @@ import AddEvent from './AddEvent'
 
 function App() {
   const [events, setEvents] = useState([])
-
+  const [currentEvent, setCurrentEvent] = useState({})
+  
   useEffect(() => {
     fetch("http://localhost:3000/events")
       .then((res) => res.json())
@@ -23,8 +24,8 @@ function App() {
     <div>
       <BrowserRouter>
         <NavBar onAddEvent={handleAddEvent}/>
-        <Route exact path="/"><EventContainer events={events}/></Route>
-        <Route exact path="/details" component={EventDetails}/>
+        <Route exact path="/"><EventContainer setCurrentEvent={setCurrentEvent} events={events}/></Route>
+        <Route exact path="/details" ><EventDetails event={currentEvent}/></Route>
         <Route exact path="/addevent" component={AddEvent}/>
         <Route exact path="/calendar"><CalendarView events={events}/></Route>
       </BrowserRouter>
