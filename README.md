@@ -72,3 +72,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 REACT Calendar Documentation:
 https://fullcalendar.io/docs/react
 npm install --save @fullcalendar/react @fullcalendar/daygrid
+
+EMAILJS Documentation/Install:
+
+npm install emailjs-com --save
