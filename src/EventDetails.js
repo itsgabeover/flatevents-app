@@ -1,4 +1,5 @@
 import React from "react"
+import emailjs from 'emailjs-com';
 
 function EventDetails({event}) {
 
@@ -22,9 +23,20 @@ function EventDetails({event}) {
       })
       .then (res => res.json())
       .then (updatedEvent => console.log(updatedEvent))
+      sendEmail(e)
       e.target.reset()
   }
-
+  function sendEmail(e) {
+    console.log('send e-mail function is invoked')
+    e.preventDefault();
+    emailjs.sendForm('service_9ysbp52', 'template_zar2r8q', e.target, 'user_5nAdsdOVhTMUsq7fIQgxH')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+    alert('Your attendance is confirmed')
+  }
 return(
   
     <div>  
@@ -38,21 +50,20 @@ return(
       <a href="Zoom Link">{event.zoom} </a>
       <br/>
       <br/>
-    <form onSubmit ={updateAttendence}>
+    <form onSubmit={updateAttendence}>
       <label> First Name:
-      <input type="text" name="fname" />
+      <input type="text" name="fname"/>
       </label> 
       <br/>
       <label>Sir Name
-      <input type="text" name="lname" />
+      <input type="text" name="lname"/>
       </label>
       <br/>
       <label>Email Address
-      <input type="text" name="email" />
+      <input type="text" name="email"/>
       </label>   
         <input type="submit" value="Submit" />
       </form>
-  
       <img src= {event.image} alt={event.name} width="350" height="300"/>
   </div>
   )
