@@ -16,8 +16,12 @@ function EventContainer({ events }) {
     }
   })
 
+  const [detailsClicked, setDetailsClicked] = useState(false)
+  
   const eachCard = eventsToDisplay.map(event => 
     <EventCard 
+    detailsClicked = {detailsClicked} 
+    setDetailsClicked ={setDetailsClicked}
       event={event}
       key={event.id}
     />

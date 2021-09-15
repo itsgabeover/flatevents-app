@@ -13,7 +13,20 @@
       "attending": [
         "Melissa",
         "Gabriel",
-        "Jae"
+        "Jae",
+        {
+          "name": "hello"
+        },
+        {
+          "name": "wed",
+          "sirName": "humpday",
+          "email": "sir@first.com"
+        },
+        {
+          "name": "Gabriel",
+          "sirName": "Funk",
+          "email": "funk@jamming.nwawe"
+        }
       ]
     },
     {
@@ -77,7 +90,12 @@
       "attending": [
         "Melissa",
         "Gabriel",
-        "Jae"
+        "Jae",
+        {
+          "name": "English",
+          "sirName": "Learning",
+          "email": "english.com"
+        }
       ]
     },
     {
