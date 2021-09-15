@@ -173,16 +173,6 @@
         "Jae",
         "Melissa"
       ]
-    },
-    {
-      "name": "New Event",
-      "description": "New Event Description",
-      "category": "career",
-      "location": "New Event Description",
-      "date": "September 15th, 2021",
-      "time": "10-11am EST",
-      "zoom": "www.zoom.com",
-      "id": 11
     }
   ]
 }
