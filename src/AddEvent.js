@@ -4,7 +4,6 @@ function AddEvent({ onAddEvent }) {
 
   function handleSubmit(e) {
     e.preventDefault()
-    console.log(e.target)
     fetch("http://localhost:3000/events", {
       method: "POST",
       headers: {
