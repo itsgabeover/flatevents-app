@@ -6,22 +6,10 @@ function EventCard({key, event, detailsClicked, setDetailsClicked}) {
    const [selectedNo, setSelectedNo] = useState(0)
 
 
-  
-
       const eventBasics = () => {
    
               return (
               <div className="card">   
-               <label for ="categories">Choose Location:</label>
-                <select name="filter">
-              <option value="All">All</option>
-              <option value="newyork">New York Campus</option>
-              <option value="chicago">Chicago Campus</option>
-              <option value="denver">Denver Campus</option>
-              <option value="sanfrancisco">San Francisco Campus</option>
-              <option value="seattle">Seattle Campus</option>
-              <option value="online">Online</option>
-        </select>   
               <h2>{event.name}</h2>
               <p>Location: {event.location}</p>
               <p>Date: {event.date}</p>
