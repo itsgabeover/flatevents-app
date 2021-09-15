@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react'
+import { BrowserRouter, Route} from 'react-router-dom'
 import NavBar from './NavBar'
 import EventContainer from './EventContainer'
 import EventDetails from './EventDetails'
-import { BrowserRouter, Route} from "react-router-dom";
-import CalendarView from './CalendarView';
-import AddEvent from './AddEvent';
+import CalendarView from './CalendarView'
+import AddEvent from './AddEvent'
 
 function App() {
   const [events, setEvents] = useState([])
