@@ -20,12 +20,21 @@ function App() {
     setEvents([...events, newEvent])
   }
 
+  function handleDeleteEvent(eventToDelete) {
+    setEvents(events.filter(event => event.id !== eventToDelete.id))
+  }
+
+
   return (
     <div>
       <BrowserRouter>
         <NavBar onAddEvent={handleAddEvent}/>
-        <Route exact path="/"><EventContainer setCurrentEvent={setCurrentEvent} events={events}/></Route>
-        <Route exact path="/details" ><EventDetails event={currentEvent}/></Route>
+        <Route exact path="/">
+          <EventContainer setCurrentEvent={setCurrentEvent} events={events} handleDeleteEvent={handleDeleteEvent}/>
+        </Route>
+        <Route exact path="/details">
+          <EventDetails event={currentEvent}/>
+        </Route>
         <Route exact path="/addevent" component={AddEvent}/>
         <Route exact path="/calendar"><CalendarView events={events}/></Route>
       </BrowserRouter>

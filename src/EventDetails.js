@@ -1,6 +1,6 @@
 import React from "react"
 
-function EventDetails({key, event}) {
+function EventDetails({event}) {
 
   const updateAttendence = (e) =>
   {
@@ -22,6 +22,7 @@ function EventDetails({key, event}) {
       })
       .then (res => res.json())
       .then (updatedEvent => console.log(updatedEvent))
+      e.target.reset()
   }
 
 return(

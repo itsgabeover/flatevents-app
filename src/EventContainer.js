@@ -1,7 +1,7 @@
 import EventCard from "./EventCard";
 import React, { useState } from 'react'
 
-function EventContainer({ events, setCurrentEvent }) {
+function EventContainer({ events, setCurrentEvent, handleDeleteEvent }) {
   const [filterBy, setFilterBy] = useState("All")
 
   function handleFilterChange(e) {
@@ -19,6 +19,7 @@ function EventContainer({ events, setCurrentEvent }) {
   const eachCard = eventsToDisplay.map(event => 
     <EventCard 
     setCurrentEvent={setCurrentEvent}
+    handleDeleteEvent={handleDeleteEvent}
       event={event}
       key={event.id}
     />
