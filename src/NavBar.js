@@ -2,9 +2,7 @@ import { useHistory } from "react-router-dom"
 
 function NavBar({ onAddEvent }) {
   let history = useHistory()
-  function handleClick() {
-    history.push("/addevent")
-  }
+
   return (
     <div>
       <h1>Flatevents</h1>

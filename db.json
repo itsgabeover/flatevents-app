@@ -7,13 +7,31 @@
       "category": "career",
       "date": "Thursday, September 16th",
       "time": "11:30am ET/8:30am PT",
-      "location": "online",
+      "location": "Online",
       "zoom": "https://flatironschool.zoom.us/j/98316664785?pwd=WDMxS3psMnpzVVhFMy9sVEFsRDZJQT09",
       "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Careers_blackboard.jpg",
       "attending": [
         "Melissa",
         "Gabriel",
-        "Jae"
+        "Jae",
+        {
+          "name": "hello"
+        },
+        {
+          "name": "wed",
+          "sirName": "humpday",
+          "email": "sir@first.com"
+        },
+        {
+          "name": "Gabriel",
+          "sirName": "Funk",
+          "email": "funk@jamming.nwawe"
+        },
+        {
+          "name": "Gabriel",
+          "sirName": "Miranda",
+          "email": "gabe.enrique.miranda@gmail.com"
+        }
       ]
     },
     {
@@ -55,7 +73,7 @@
       "category": "meetups",
       "date": "Friday, September 17th",
       "time": "3:00-4:00pm EST",
-      "location": "online",
+      "location": "Online",
       "zoom": "https://flatironschool.zoom.us/j/93549200168?pwd=cWUrRlBjeHdRK1B0Zll1MzJibEV1QT09",
       "image": "https://expleogroup.com/wp-content/uploads/2021/05/shutterstock_1182992302.jpg.jpg",
       "attending": [
@@ -71,13 +89,18 @@
       "category": "meetups",
       "date": "Wednesday, September 15th",
       "time": "1:00-2:00pm EST",
-      "location": "online",
+      "location": "Online",
       "zoom": "https://flatironschool.zoom.us/j/92425203923?pwd=U2Q2UlF1UmVSU0E4anhhL2ZDd3FVUT09",
       "image": "https://www.sailthru.com/content/uploads/2020/09/iStock-1202344480-1.jpg",
       "attending": [
         "Melissa",
         "Gabriel",
-        "Jae"
+        "Jae",
+        {
+          "name": "English",
+          "sirName": "Learning",
+          "email": "english.com"
+        }
       ]
     },
     {
@@ -87,7 +110,7 @@
       "category": "meetups",
       "date": "Wednesday, September 15th",
       "time": "1:00-2:00pm EST",
-      "location": "NYC, Campus",
+      "location": "New York Campus",
       "zoom": "In-Person",
       "image": "https://m.media-amazon.com/images/M/MV5BZWFlNzRmOTItZjY1Ni00ZjZkLTk5MDgtOGFhOTYzNWFhYzhmXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg",
       "attending": [
@@ -101,7 +124,7 @@
       "category": "meetups",
       "date": "Thursday, September 15th",
       "time": "12:30-2:00pm EST",
-      "location": "NYC, Campus",
+      "location": "New York Campus",
       "zoom": "In-Person",
       "image": "https://play-lh.googleusercontent.com/Q8RMXj6aSFQolfCuivGnXqF1ELD31HIuEFifG8MiDeHPjpFh9umrIkKL1VEvHnT_Ww",
       "attending": [
@@ -116,7 +139,7 @@
       "category": "career",
       "date": "Wednesday, September 15th",
       "time": "5:00-6:30pm EST",
-      "location": "NYC, Campus",
+      "location": "New York Campus",
       "zoom": "In-Person",
       "image": "https://i.ytimg.com/vi/kM9ASKAni_s/maxresdefault.jpg",
       "attending": [
@@ -131,7 +154,7 @@
       "category": "meetups",
       "date": "Friday , September 24th",
       "time": "4:00-6:00pm MTN",
-      "location": "Denver, Campus",
+      "location": "Denver Campus",
       "zoom": "In-Person",
       "image": "https://about.fb.com/wp-content/uploads/2020/04/Grad_edit3.jpg?fit=1920%2C1080",
       "attending": [
@@ -147,7 +170,7 @@
       "category": "meetups",
       "date": "Monday, September 20th",
       "time": "12:00-2:00pm MTN",
-      "location": "Denver, Campus",
+      "location": "Denver Campus",
       "zoom": "In-Person",
       "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-keto-pizza-073-1544039876.jpg?crop=0.668xw:1.00xh;0.233xw,0.00255xh&resize=980:*",
       "attending": [
