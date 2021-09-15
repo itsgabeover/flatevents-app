@@ -15,14 +15,10 @@ function EventContainer({ events, setCurrentEvent }) {
       return event.location === filterBy
     }
   })
-
-  const [detailsClicked, setDetailsClicked] = useState(false)
   
   const eachCard = eventsToDisplay.map(event => 
     <EventCard 
     setCurrentEvent={setCurrentEvent}
-    detailsClicked = {detailsClicked} 
-    setDetailsClicked ={setDetailsClicked}
       event={event}
       key={event.id}
     />
