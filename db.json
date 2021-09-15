@@ -13,7 +13,15 @@
       "attending": [
         "Melissa",
         "Gabriel",
-        "Jae"
+        "Jae",
+        {
+          "name": "hello"
+        },
+        {
+          "name": "wed",
+          "sirName": "humpday",
+          "email": "sir@first.com"
+        }
       ]
     },
     {
