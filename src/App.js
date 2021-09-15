@@ -26,7 +26,7 @@ function App() {
         <Route exact path="/"><EventContainer events={events}/></Route>
         <Route exact path="/details" component={EventDetails}/>
         <Route exact path="/addevent" component={AddEvent}/>
-        <Route exact path="/calendar" component={CalendarView}/>
+        <Route exact path="/calendar"><CalendarView events={events}/></Route>
       </BrowserRouter>
     </div>
   )

@@ -4,7 +4,7 @@ function AddEvent({ onAddEvent }) {
 
   function handleSubmit(e) {
     e.preventDefault()
-
+    console.log(e.target)
     fetch("http://localhost:3000/events", {
       method: "POST",
       headers: {
@@ -14,7 +14,7 @@ function AddEvent({ onAddEvent }) {
         name: e.target.name.value,
         description: e.target.description.value,
         category: e.target.category.value,
-        location:e.target.location.value,
+        location: e.target.location.value,
         date: e.target.date.value,
         time: e.target.time.value,
         zoom: e.target.zoom.value,
@@ -43,16 +43,16 @@ function AddEvent({ onAddEvent }) {
           <option value="networking">Networking</option>
         </select>
         <label>Location: </label>
-        <select name="label">
-          <option value="newyork">New York Campus</option>
-          <option value="chicago">Chicago Campus</option>
-          <option value="denver">Denver Campus</option>
-          <option value="sanfrancisco">San Francisco Campus</option>
-          <option value="seattle">Seattle Campus</option>
-          <option value="online">Online</option>
+        <select name="location">
+          <option value="New York Campus">New York Campus</option>
+          <option value="Chicago Campus">Chicago Campus</option>
+          <option value="Denver Campus">Denver Campus</option>
+          <option value="San Francisco Campus">San Francisco Campus</option>
+          <option value="Seattle Campus">Seattle Campus</option>
+          <option value="Online">Online</option>
         </select>
         <label>Date: </label>
-        <input type="text" name="date" placeholder="Date..." />
+        <input type="date" name="date" placeholder="Date..." />
         <label>Time: </label>
         <input type="text" name="time" placeholder="Time..." />
         <label>Zoom: </label>
