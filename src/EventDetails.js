@@ -1,5 +1,4 @@
 import React from "react"
-import EventCard from "./EventCard"
 
 function EventDetails({key, event}) {
 
@@ -24,10 +23,6 @@ function EventDetails({key, event}) {
       .then (res => res.json())
       .then (updatedEvent => console.log(updatedEvent))
   }
-
-
-
-  
 
 return(
   
