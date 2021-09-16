@@ -74,7 +74,7 @@ return(
       <form onSubmit={updateAttendence} className="attendance-form">
         <label> First Name: </label>
         <input type="text" name="fname" className="attendance-input"/> 
-        <label>Sir Name: </label>
+        <label>Last Name: </label>
         <input type="text" name="lname" className="attendance-input"/>
         <label>Email Address: </label> 
         <input type="text" name="email" className="attendance-input"/> 
