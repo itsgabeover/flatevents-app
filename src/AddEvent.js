@@ -65,7 +65,7 @@ function AddEvent({ onAddEvent }) {
         <label>Time: </label>
         <input type="text" name="time" className="add-event-form-input" placeholder="Time..." />
         {location === "Online" ? <><label>Zoom Link: </label><input type="text" name="zoom" className="add-event-form-input" placeholder="Zoom Link..." /></> : null}
-        <button>Add Event</button>
+        <button className="add-event-button">Add Event</button>
       </form>
       <img src={image} alt="Category" className="add-event-image"/>
     </div>
