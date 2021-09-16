@@ -51,6 +51,26 @@
           "name": "Melissa",
           "sirName": "Funk",
           "email": "melissaloveshotdogs@gmail.com"
+        },
+        {
+          "name": "Gabriel",
+          "sirName": "Miranda",
+          "email": "gabe.enrique.miranda@gmail.com"
+        },
+        {
+          "name": "Gabriel",
+          "sirName": "Miranda",
+          "email": "gabe.enrique.miranda@gmail.com"
+        },
+        {
+          "name": "Gabriel",
+          "sirName": "Miranda",
+          "email": "gabe.enrique.miranda@gmail.com"
+        },
+        {
+          "name": "Gabriel",
+          "sirName": "Miranda",
+          "email": "gabe.enrique.miranda@gmail.com"
         }
       ]
     },
@@ -83,7 +103,12 @@
       "attending": [
         "Melissa",
         "Gabriel",
-        "Jae"
+        "Jae",
+        {
+          "name": "Gabriel",
+          "sirName": "Miranda",
+          "email": "gabe.enrique.miranda@gmail.com"
+        }
       ]
     },
     {
@@ -197,7 +222,6 @@
         "Gabriel",
         "Jae",
         "Melissa"
-      ]
-    }
-  ]
+      ]}
+    ]
 }
