@@ -3,6 +3,15 @@ import emailjs from 'emailjs-com';
 
 function EventDetails({event}) {
 
+function getCurrentDate(separator=''){
+
+    let newDate = new Date()
+    let date = newDate.getDate();
+    let month = newDate.getMonth() + 1;
+    let year = newDate.getFullYear();
+    
+    return `${year}${separator}${month<10?`0${month}`:`${month}`}${separator}${date}`
+    }
   const updateAttendence = (e) =>
   {
     e.preventDefault()
@@ -27,12 +36,6 @@ function EventDetails({event}) {
       e.target.reset()
   }
   function sendEmail(e) {
-    console.log(e.target.email.value)
-    console.log(event)
-    console.log(event.zoom)
-    console.log(event.time)
-    console.log(event.name)
-    console.log(event.description)
     let templateParams = {
       email: e.target.email.value,
       lname: e.target.lname.value,
@@ -41,8 +44,11 @@ function EventDetails({event}) {
       time: event.time,
       date: event.date,
       description: event.description,
-      name: event.name
+      name: event.name,
+      image: event.image,
+      currentdate: getCurrentDate()
     }
+    console.log(templateParams)
     emailjs.send('service_9ysbp52', 'template_zar2r8q', templateParams, 'user_5nAdsdOVhTMUsq7fIQgxH')
       .then((result) => {
           console.log(result.text);

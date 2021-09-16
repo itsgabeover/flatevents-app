@@ -4,7 +4,6 @@ import dayGridPlugin from '@fullcalendar/daygrid' // a plugin!
 //Documentation for 
 function CalendarView({events}) {
 
-  console.log(events)
   const newArray = events.map(event => ({ title: event.name, date:event.date}));
   console.log(newArray)
   return (
