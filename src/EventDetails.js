@@ -52,33 +52,28 @@ function EventDetails({event}) {
     alert('Your attendance is confirmed')
   }
 return(
-  
     <div>  
-      <p>Event Details</p>
-      <h1>{event.name}</h1>
-      <p>{event.date}</p>
-      <p>{event.time}</p>
-      <p>{event.description}</p>
-      <p>{event.location}</p>
- 
-      <a href="Zoom Link">{event.zoom} </a>
-      <br/>
-      <br/>
-    <form onSubmit={updateAttendence}>
-      <label> First Name:
-      <input type="text" name="fname"/>
-      </label> 
-      <br/>
-      <label>Sir Name
-      <input type="text" name="lname"/>
-      </label>
-      <br/>
-      <label>Email Address
-      <input type="text" name="email"/>
-      </label>   
-        <input type="submit" value="Submit" />
+      <div className="event-details">
+        <h1>Event Details</h1>
+        <h2>{event.name}</h2>
+        <img src= {event.image} alt={event.name} width="350" height="300"/>
+        <p>{event.description}</p>
+        <p>Location: {event.location}</p>
+        <p>Date: {event.date}</p>
+        <p>Time: {event.time}</p>
+        <a href="Zoom Link">{event.zoom} </a>
+        <p>*Enter your information below to attend!*</p>
+      </div>
+
+      <form onSubmit={updateAttendence} className="attendance-form">
+        <label> First Name: </label>
+        <input type="text" name="fname" className="attendance-input"/> 
+        <label>Sir Name: </label>
+        <input type="text" name="lname" className="attendance-input"/>
+        <label>Email Address: </label> 
+        <input type="text" name="email" className="attendance-input"/> 
+        <input type="submit" value="Submit" className="attendance-button" />
       </form>
-      <img src= {event.image} alt={event.name} width="350" height="300"/>
   </div>
   )
 }
