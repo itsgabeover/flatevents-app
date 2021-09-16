@@ -14,7 +14,7 @@ function App() {
     fetch("http://localhost:3000/events")
       .then((res) => res.json())
       .then(setEvents)  
-  }, [])
+  }, [events])
 
   function handleAddEvent(newEvent) {
     setEvents([...events, newEvent])
