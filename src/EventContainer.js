@@ -27,7 +27,8 @@ function EventContainer({ events, setCurrentEvent, handleDeleteEvent }) {
 
   return (
     <div>
-        <label for="locations">Choose Location:</label>
+      <div className="location-select">
+        <label for="locations">Choose Location: </label>
         <select name="filter" onChange={handleFilterChange}>
           <option value="All">All</option>
           <option value="New York Campus">New York Campus</option>
@@ -37,6 +38,7 @@ function EventContainer({ events, setCurrentEvent, handleDeleteEvent }) {
           <option value="Seattle Campus">Seattle Campus</option>
           <option value="Online">Online</option>
         </select>
+      </div>
       {eachCard}
     </div>
   )

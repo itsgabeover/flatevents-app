@@ -38,13 +38,13 @@ function AddEvent({ onAddEvent }) {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="add-event-form">
         <label>Name: </label>
-        <input type="text" name="name" placeholder="Name..." />
+        <input type="text" name="name" className="add-event-form-input" placeholder="Name..." />
         <label>Description: </label>
-        <input type="text" name="description" placeholder="Description..." />
+        <input type="text" name="description" className="add-event-form-input" placeholder="Description..." />
         <label>Category: </label>
-        <select name="category" onChange={handleChangeImage}>
+        <select name="category" className="add-event-form-input" onChange={handleChangeImage}>
           <option value="https://upload.wikimedia.org/wikipedia/commons/3/36/Careers_blackboard.jpg">Career</option>
           <option value="https://www.codingame.com/blog/wp-content/uploads/2015/02/dev4fun-meetup.png">Meetups</option>
           <option value="https://abaforlawstudents.com/wp-content/uploads/2019/11/study-group.jpg">Study Groups</option>
@@ -52,7 +52,7 @@ function AddEvent({ onAddEvent }) {
           <option value="https://www.lenfestinstitute.org/wp-content/uploads/2020/08/Networking.jpg">Networking</option>
         </select>
         <label>Location: </label>
-        <select name="location" value={location} onChange={handleLocationInput}>
+        <select name="location" className="add-event-form-input" value={location} onChange={handleLocationInput}>
           <option value="New York Campus">New York Campus</option>
           <option value="Chicago Campus">Chicago Campus</option>
           <option value="Denver Campus">Denver Campus</option>
@@ -61,13 +61,13 @@ function AddEvent({ onAddEvent }) {
           <option value="Online">Online</option>
         </select>
         <label>Date: </label>
-        <input type="date" name="date" placeholder="Date..." />
+        <input type="date" name="date" className="add-event-form-input" placeholder="Date..." />
         <label>Time: </label>
-        <input type="text" name="time" placeholder="Time..." />
-        {location === "Online" ? <><label>Zoom Link: </label><input type="text" name="zoom" placeholder="Zoom Link..." /></> : null}
+        <input type="text" name="time" className="add-event-form-input" placeholder="Time..." />
+        {location === "Online" ? <><label>Zoom Link: </label><input type="text" name="zoom" className="add-event-form-input" placeholder="Zoom Link..." /></> : null}
         <button>Add Event</button>
       </form>
-      <img src={image} alt="Category"/>
+      <img src={image} alt="Category" className="add-event-image"/>
     </div>
   )
 }

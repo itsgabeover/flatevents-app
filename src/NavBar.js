@@ -1,16 +1,16 @@
 import { useHistory } from "react-router-dom"
 
-function NavBar({ onAddEvent }) {
+function NavBar() {
   let history = useHistory()
 
   return (
-    <div>
-      <h1>Flatevents</h1>
-      <span>
-        <h2 onClick={() => history.push("/")} >Home | </h2>
-        <h2 onClick={() => history.push("/addevent")}>Add Event | </h2>
-        <h2 onClick={() => history.push("/calendar")}>Calendar View</h2>
-      </span>
+    <div className="navbar">
+      <div>
+        <h1><img className="navbar-logo" src="https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/8/original/flatironschool.png"/>Flatevents</h1>
+      </div>
+        <h3 className="navbarh3" onClick={() => history.push("/")}>Home</h3>
+        <h3 className="navbarh3" onClick={() => history.push("/addevent")}>Add Event</h3>
+        <h3 className="navbarh3" onClick={() => history.push("/calendar")}>Calendar View</h3>
     </div>
   )
 }

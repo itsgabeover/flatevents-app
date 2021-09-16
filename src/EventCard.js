@@ -22,8 +22,8 @@ function EventCard({ event, setCurrentEvent, handleDeleteEvent }) {
       <p>Location: {event.location}</p>
       <p>Date: {event.date}</p>
       <span>
-        <button onClick={showDetails}>See Details</button>
-        <button onClick={handleDeleteClick}>Delete Event</button>
+        <button className="card-button" onClick={showDetails}>See Details</button>
+        <button className="card-button" onClick={handleDeleteClick}>Delete Event</button>
       </span>
     </div>
   )
