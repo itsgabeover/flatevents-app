@@ -27,9 +27,23 @@ function EventDetails({event}) {
       e.target.reset()
   }
   function sendEmail(e) {
-    console.log('send e-mail function is invoked')
-    e.preventDefault();
-    emailjs.sendForm('service_9ysbp52', 'template_zar2r8q', e.target, 'user_5nAdsdOVhTMUsq7fIQgxH')
+    console.log(e.target.email.value)
+    console.log(event)
+    console.log(event.zoom)
+    console.log(event.time)
+    console.log(event.name)
+    console.log(event.description)
+    let templateParams = {
+      email: e.target.email.value,
+      lname: e.target.lname.value,
+      fname: e.target.fname.value,
+      zoom: event.zoom,
+      time: event.time,
+      date: event.date,
+      description: event.description,
+      name: event.name
+    }
+    emailjs.send('service_9ysbp52', 'template_zar2r8q', templateParams, 'user_5nAdsdOVhTMUsq7fIQgxH')
       .then((result) => {
           console.log(result.text);
       }, (error) => {

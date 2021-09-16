@@ -51,6 +51,26 @@
           "name": "Melissa",
           "sirName": "Funk",
           "email": "melissaloveshotdogs@gmail.com"
+        },
+        {
+          "name": "Gabriel",
+          "sirName": "Miranda",
+          "email": "gabe.enrique.miranda@gmail.com"
+        },
+        {
+          "name": "Gabriel",
+          "sirName": "Miranda",
+          "email": "gabe.enrique.miranda@gmail.com"
+        },
+        {
+          "name": "Gabriel",
+          "sirName": "Miranda",
+          "email": "gabe.enrique.miranda@gmail.com"
+        },
+        {
+          "name": "Gabriel",
+          "sirName": "Miranda",
+          "email": "gabe.enrique.miranda@gmail.com"
         }
       ]
     },
@@ -83,7 +103,12 @@
       "attending": [
         "Melissa",
         "Gabriel",
-        "Jae"
+        "Jae",
+        {
+          "name": "Gabriel",
+          "sirName": "Miranda",
+          "email": "gabe.enrique.miranda@gmail.com"
+        }
       ]
     },
     {
@@ -200,15 +225,21 @@
       ]
     },
     {
-      "name": "",
-      "description": "",
-      "category": "https://upload.wikimedia.org/wikipedia/commons/3/36/Careers_blackboard.jpg",
+      "name": "Gabriel Miranda",
+      "description": "asdfd",
+      "category": "https://abaforlawstudents.com/wp-content/uploads/2019/11/study-group.jpg",
       "location": "New York Campus",
-      "date": "",
-      "time": "",
+      "date": "2021-09-24",
+      "time": "1:00-:200pm",
       "zoom": null,
-      "attending": [],
-      "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Careers_blackboard.jpg",
+      "attending": [
+        {
+          "name": "Gabriel",
+          "sirName": "Miranda",
+          "email": "gabe.enrique.miranda@gmail.com"
+        }
+      ],
+      "image": "https://abaforlawstudents.com/wp-content/uploads/2019/11/study-group.jpg",
       "id": 11
     }
   ]
