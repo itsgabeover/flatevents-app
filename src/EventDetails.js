@@ -2,7 +2,8 @@ import React from "react"
 import emailjs from 'emailjs-com';
 
 function EventDetails({event}) {
-
+  let eDate = event.date
+  let formattedDate = ((new Date(eDate)).toUTCString()).substring(0,16)
   const updateAttendence = (e) =>
   {
     e.preventDefault()
@@ -27,8 +28,7 @@ function EventDetails({event}) {
       e.target.reset()
   }
   function sendEmail(e) {
-    let eDate = event.date
-    let formattedDate = ((new Date(eDate)).toUTCString()).substring(0,16)
+
     let templateParams = {
       email: e.target.email.value,
       lname: e.target.lname.value,
@@ -57,7 +57,7 @@ return(
         <img src= {event.image} alt={event.name} width="350" height="300"/>
         <p>{event.description}</p>
         <p>Location: {event.location}</p>
-        <p>Date: {event.date}</p>
+        <p>Date: {formattedDate}</p>
         <p>Time: {event.time}</p>
         <a href="Zoom Link">{event.zoom} </a>
         <p>*Enter your information below to attend!*</p>

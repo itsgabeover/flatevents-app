@@ -199,7 +199,12 @@
       "image": "https://play-lh.googleusercontent.com/Q8RMXj6aSFQolfCuivGnXqF1ELD31HIuEFifG8MiDeHPjpFh9umrIkKL1VEvHnT_Ww",
       "attending": [
         "Gabriel",
-        "Jae"
+        "Jae",
+        {
+          "name": "Gabriel",
+          "sirName": "Miranda",
+          "email": "gabe.enrique.miranda@gmail.com"
+        }
       ]
     },
     {
