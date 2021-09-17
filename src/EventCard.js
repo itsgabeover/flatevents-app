@@ -2,7 +2,8 @@ import {useHistory} from 'react-router-dom'
 
 function EventCard({ event, setCurrentEvent, handleDeleteEvent }) {
   let history = useHistory()
-
+  let eDate = event.date
+  let formattedDate = ((new Date(eDate)).toUTCString()).substring(0,16)
   const showDetails = () => {
     setCurrentEvent(event)
     history.push("/details")
@@ -20,7 +21,7 @@ function EventCard({ event, setCurrentEvent, handleDeleteEvent }) {
     <div className="card">   
       <h2>{event.name}</h2>
       <p>Location: {event.location}</p>
-      <p>Date: {event.date}</p>
+      <p>Date: {formattedDate}</p>
       <span>
         <button className="card-button" onClick={showDetails}>See Details</button>
         <button className="card-button" onClick={handleDeleteClick}>Delete Event</button>
