@@ -39,14 +39,13 @@ function EventDetails({event}) {
       image: event.image,
       location: event.location
     }
-     console.log(templateParams)
     emailjs.send('service_9ysbp52', 'template_zar2r8q', templateParams, 'user_5nAdsdOVhTMUsq7fIQgxH')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
       });
-    alert('Your attendance is confirmed')
+    alert('Your attendance is confirmed, check your e-mail for confirmation')
   }
 return(
     <div>  
