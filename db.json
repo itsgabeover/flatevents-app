@@ -134,7 +134,12 @@
       "attending": [
         "Melissa",
         "Gabriel",
-        "Jae"
+        "Jae",
+        {
+          "name": "Gabriel",
+          "sirName": "Miranda",
+          "email": "gabe.enrique.miranda@gmail.com"
+        }
       ]
     },
     {

@@ -3,15 +3,6 @@ import emailjs from 'emailjs-com';
 
 function EventDetails({event}) {
 
-function getCurrentDate(separator=''){
-
-    let newDate = new Date()
-    let date = newDate.getDate();
-    let month = newDate.getMonth() + 1;
-    let year = newDate.getFullYear();
-    
-    return `${year}${separator}${month<10?`0${month}`:`${month}`}${separator}${date}`
-    }
   const updateAttendence = (e) =>
   {
     e.preventDefault()
@@ -46,9 +37,9 @@ function getCurrentDate(separator=''){
       description: event.description,
       name: event.name,
       image: event.image,
-      currentdate: getCurrentDate()
+      location: event.location
     }
-    console.log(templateParams)
+     console.log(templateParams)
     emailjs.send('service_9ysbp52', 'template_zar2r8q', templateParams, 'user_5nAdsdOVhTMUsq7fIQgxH')
       .then((result) => {
           console.log(result.text);
