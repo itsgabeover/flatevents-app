@@ -27,13 +27,15 @@ function EventDetails({event}) {
       e.target.reset()
   }
   function sendEmail(e) {
+    let eDate = event.date
+    let formattedDate = ((new Date(eDate)).toUTCString()).substring(0,16)
     let templateParams = {
       email: e.target.email.value,
       lname: e.target.lname.value,
       fname: e.target.fname.value,
       zoom: event.zoom,
       time: event.time,
-      date: event.date,
+      date: formattedDate,
       description: event.description,
       name: event.name,
       image: event.image,
